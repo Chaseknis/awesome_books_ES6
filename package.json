@@ -1,0 +1,35 @@
+{
+  "name": "awesome_books_app_with_es6_modules",
+  "version": "1.0.0",
+  "description": "<a name=\"readme-top\"></a>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chaseknis/awesome_books_app_with_es6_modules.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chaseknis/awesome_books_app_with_es6_modules/issues"
+  },
+  "homepage": "https://github.com/Chaseknis/awesome_books_app_with_es6_modules#readme",
+  "devDependencies": {
+    "@types/luxon": "^3.2.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.27.4",
+    "hint": "^2.0.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  },
+  "dependencies": {
+    "luxon": "^3.2.1"
+  }
+}
