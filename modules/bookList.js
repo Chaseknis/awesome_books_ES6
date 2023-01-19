@@ -1,25 +1,37 @@
 import Book from './book.js';
+import Store from './store.js';
 
 new Book();
 
 class BookList {
+  static storedBooks = []
+
   static displayBooks = () => {
-    const StoredBooks = [];
-    const books = StoredBooks;
-    books.forEach((book) => BookList.addBookToList(book));
+
   }
 
   static addBookToList = (book) => {
+    BookList.storedBooks.unshift(book);
+    BookList.drawBooks();
+  }
+
+  static drawBooks = () => {
     const list = document.querySelector('.book_list');
+    list.innerHTML = '';
 
-    const row = document.createElement('tr');
+    this.storedBooks.forEach((book, index) => {
+      const row = document.createElement('tr');
 
-    row.innerHTML = `
-            <td>${book.title}</td>
-            <td>${book.author}</td>
-            <td><a href="#" class="table_button delete">Remove</a></td>
-        `;
-    list.appendChild(row);
+      row.innerHTML = `
+              <td>${book.title}</td>
+              <td>${book.author}</td>
+              <td><a href="#" class="table_button delete" id="remove_btn_${index}">Remove</a></td>
+          `;
+
+      list.appendChild(row);
+    });
+
+    Store.addBooks(this.storedBooks);
   }
 
   static deleteBook = (el) => {
