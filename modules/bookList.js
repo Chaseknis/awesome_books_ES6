@@ -7,7 +7,10 @@ class BookList {
   static storedBooks = []
 
   static displayBooks = () => {
-
+    const books = Store.getBooks();
+    console.log(books);
+    this.storedBooks = books;
+    this.drawBooks();
   }
 
   static addBookToList = (book) => {
@@ -34,10 +37,19 @@ class BookList {
     Store.addBooks(this.storedBooks);
   }
 
-  static deleteBook = (el) => {
-    if (el.classList.contains('delete')) {
-      el.parentElement.parentElement.remove();
+  static deleteBook = (e) => {
+    const books = Store.getBooks();
+
+    if (e.classList.contains('delete')) {
+      e.parentElement.parentElement.remove();
+      books.forEach((book, index) => {
+        if (`remove_btn_${index}` === e.id) {
+          books.splice(index, 1);
+        }
+      });
     }
+
+    Store.addBooks(books);
   }
 
   static clearFields = () => {
