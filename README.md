@@ -73,7 +73,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link]()
+- [Live Demo Link](https://chaseknis.github.io/awesome_books_ES6/)
 
 
 
