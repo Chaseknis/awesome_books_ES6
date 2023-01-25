@@ -1,14 +1,15 @@
 import Book from './book.js';
 import Store from './store.js';
 
-new Book();
+const book = () => new Book('date');
+
+book();
 
 class BookList {
   static storedBooks = []
 
   static displayBooks = () => {
     const books = Store.getBooks();
-    console.log(books);
     this.storedBooks = books;
     this.drawBooks();
   }

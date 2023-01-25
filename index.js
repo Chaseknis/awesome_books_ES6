@@ -3,8 +3,11 @@ import BookList from './modules/bookList.js';
 import Store from './modules/store.js';
 import Clock from './modules/clock.js';
 
-new Clock('date');
-new Store();
+const clock = () => new Clock('date');
+const store = () => new Store();
+
+clock();
+store();
 
 document.addEventListener('DOMContentLoaded', BookList.displayBooks);
 

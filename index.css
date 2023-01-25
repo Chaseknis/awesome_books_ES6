@@ -171,11 +171,12 @@ td {
   .add_new {
     margin: 10px 500px;
   }
+
   .list {
     margin: 10px 500px;
   }
+
   #date {
     margin-left: 90%;
   }
-
 }

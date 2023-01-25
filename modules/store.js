@@ -14,7 +14,7 @@ class Store {
       localStorage.setItem('awesome-books-my-books', JSON.stringify(books));
     }
 
-    static removeBooks = (books) => {
+    static removeBooks = () => {
       const stringBookList = localStorage.getItem('awesome-books-my-books');
 
       if (stringBookList) {
