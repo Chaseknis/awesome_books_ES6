@@ -30,7 +30,7 @@
 # 📖<a name="about-project">Awesome Book</a>
 
 
-***Awesome book is a project built with a ES6 modules, with features that allow you to add to the list of book, remove from the list of and save the list you already enter***
+***Awesome book is a project built with a ES6 modules, with features that allow you to add to the list of books, remove from the list and save the list you already entered***
 
 
 ## 🛠 Built With <a name="built-with">VSCode</a>
@@ -82,7 +82,7 @@
 ## 💻 Getting Started <a name="getting-started"></a>
 
 
-A beginner developer can use this template as a starting point for creating other HTML projects that are properly set up with CSS and have ESLint configured.
+A beginner developer can use this template as a starting point for creating one page APP projects using `Javascript` and `HTML`/`CSS` with clean and organized code using the `module` directory.
 
 ### Prerequisites
 
@@ -96,7 +96,7 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-gh repo clone Chaseknis/chaseknis.github.io
+[gh repo clone Chaseknis/awesome_books_ES6]()
 
 ### Install
 
@@ -105,8 +105,8 @@ To obtain a copy of this repository, clone it to your desired folder:
 Commands: 
 
 ```sh
-  gh repo clone Chaseknis/book_storage
-  cd hello-world
+  gh repo clone Chaseknis/awesome_books_ES6
+  cd awesome_books
   npm install -y
 ```
 <br><br>
@@ -166,9 +166,7 @@ To run tests, run the following command:
 
 > I'll add the following section to the webpage.
 
-- [ ] **[section to show list of books]()**
-- [ ] **[section to add to the list of books]()**
-- [ ] **[A button to delete the from the list of books]()**
+- [ ] **[project is ready for now!]()**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -177,7 +175,7 @@ To run tests, run the following command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Chaseknis/book_storage/issues).
+Feel free to check the [issues page](https://github.com/Chaseknis/awesome_books_ES6/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -194,7 +192,7 @@ If you like this project... Kindly leave a star ⭐
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank Microverse and my studying partners
+I would like to thank Microverse and my Coding partners
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
