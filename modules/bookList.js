@@ -42,14 +42,17 @@ class BookList {
 
     if (e.classList.contains('delete')) {
       e.parentElement.parentElement.remove();
-      books.forEach((book, index) => {
-        if (`remove_btn_${index}` === e.id) {
-          books.splice(index, 1);
-        }
-      });
     }
 
-    Store.addBooks(books);
+    books.forEach((book, index) => {
+      if (e.id === `remove_btn_${index}`) {
+        books.splice(index, 1);
+      }
+    });
+    this.storedBooks = books;
+    Store.addBooks(this.storedBooks);
+    this.drawBooks();
+    BookList.displayBooks();
   }
 
   static clearFields = () => {
