@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Books</title>
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Awesome Books</a>
+        <nav class="nav">
+            <li class="nav_list"><a href="#list">List</a></li>
+            <hr>
+            <li class="nav_add_new"><a href="#add_new">Add New</a></li>
+            <hr>
+            <li class="nav_contact"><a href="#contact">Contact</a></li>
+        </nav>
+    </header>
+
+    <div id="date"></div>
+
+    <main>
+        <section id="list" class="list hidden">
+            <h1>Awesome Books</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tbody class="book_list">
+
+                </tbody>
+            </table>
+            
+        </section>
+
+        <section id="add_new" class="add_new">
+            <h2>Add a New Book</h2>
+
+            <form class="book_form" action="">
+                <input class="input_title" type="text" name="Title" placeholder="Title" required>
+                <input class="input_author" type="text" name="Author" placeholder="Author" required>
+                <button class="form_button" type="submit">Add</button>
+            </form>
+        </section>
+
+        <section id="contact" class="contact hidden">
+            <div class="contact_container">
+                <h2>
+                  Contact Information
+                </h2>
+                <p>
+                  Do you have any questions or you just want to say "Hello!" You can reach out to us!
+                </p>
+                <ul>
+                  <li>Our Email: <span>mail@mail.com</span></li>
+                  <li>Our Email: <span>0089288377229</span></li>
+                  <li>Our Email: <span>Street name 22, 899849 City, Country </span></li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <h3>Copyrights ...</h3>
+    </footer>
+
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>
